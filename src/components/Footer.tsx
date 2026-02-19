@@ -63,6 +63,7 @@ const Footer = () => {
               { label: "Hôtels & Séjours", href: "/hotels" },
               { label: "Service Visa", href: "/visa" },
               { label: "Réservation Vols", href: "/vols" },
+              { label: "A propos", href: "/apropos" },
               { label: "Contact", href: "/contact" },
             ].map((item) => (
               <li key={item.label}>
@@ -103,7 +104,7 @@ const Footer = () => {
       {/* Bottom bar */}
       <div className="border-t border-primary-foreground/10 py-5 px-4">
         <div className="container mx-auto flex flex-col sm:flex-row justify-between items-center gap-3 font-body text-sm text-primary-foreground/50">
-          <p>© 2024 True Travel – Agence de Voyage. Tous droits réservés.</p>
+          <p>© 2026 True Travel – Agence de Voyage. Tous droits réservés.</p>
           <div className="flex gap-6">
             <a href="#" className="hover:text-brand-lime transition-colors">Mentions légales</a>
             <a href="#" className="hover:text-brand-lime transition-colors">CGV</a>

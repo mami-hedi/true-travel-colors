@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap');
+
 
 /* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
 All colors MUST be HSL.
@@ -11,8 +12,10 @@ All colors MUST be HSL.
 @layer base {
   :root {
     /* True Travel Brand Colors */
-    --brand-crimson: 345 50% 50%;      /* #c1405e */
-    --brand-lime: 73 57% 56%;          /* #bbd04c */
+    --brand-crimson: 345 50% 50%;
+    /* #c1405e */
+    --brand-lime: 73 57% 56%;
+    /* #bbd04c */
 
     --background: 36 33% 97%;
     --foreground: 220 25% 15%;
@@ -45,7 +48,7 @@ All colors MUST be HSL.
     --radius: 0.75rem;
 
     /* Custom tokens */
-    --hero-overlay: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.55) 100%);
+    --hero-overlay: linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.55) 100%);
     --card-shadow: 0 4px 24px -4px hsl(220 25% 15% / 0.12);
     --card-shadow-hover: 0 12px 40px -8px hsl(220 25% 15% / 0.22);
 
@@ -100,7 +103,10 @@ All colors MUST be HSL.
     font-family: 'Inter', sans-serif;
   }
 
-  h1, h2, h3, h4 {
+  h1,
+  h2,
+  h3,
+  h4 {
     font-family: 'Playfair Display', serif;
   }
 }
@@ -139,6 +145,13 @@ All colors MUST be HSL.
 }
 
 @keyframes float {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-8px); }
+
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
 }

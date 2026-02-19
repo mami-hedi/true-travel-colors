@@ -8,7 +8,11 @@ import Hotels from "./pages/Hotels";
 import Visa from "./pages/Visa";
 import Vols from "./pages/Vols";
 import Contact from "./pages/Contact";
+import Apropos from "./pages/apropos";
 import NotFound from "./pages/NotFound";
+
+import ScrollToTop from "@/components/ScrollToTop";
+
 
 const queryClient = new QueryClient();
 
@@ -18,11 +22,13 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/hotels" element={<Hotels />} />
           <Route path="/visa" element={<Visa />} />
           <Route path="/vols" element={<Vols />} />
+          <Route path="/apropos" element={<Apropos />} />
           <Route path="/contact" element={<Contact />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />

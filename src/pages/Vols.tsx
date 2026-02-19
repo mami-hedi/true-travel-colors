@@ -132,9 +132,7 @@ const Vols = () => {
                     <p className="font-body text-xs text-muted-foreground">{d.type} • {d.dispo}</p>
                   </div>
                 </div>
-                <button className="flex items-center gap-1 text-brand-crimson font-semibold text-sm opacity-0 group-hover:opacity-100 transition-opacity">
-                  Réserver <ArrowRight size={14} />
-                </button>
+
               </div>
             ))}
           </div>
