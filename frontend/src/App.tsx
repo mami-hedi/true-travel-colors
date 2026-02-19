@@ -9,6 +9,7 @@ import Visa from "./pages/Visa";
 import Vols from "./pages/Vols";
 import Contact from "./pages/Contact";
 import Apropos from "./pages/apropos";
+import Excursions from "./pages/Excursions";
 import NotFound from "./pages/NotFound";
 
 import ScrollToTop from "@/components/ScrollToTop";
@@ -29,6 +30,7 @@ const App = () => (
           <Route path="/visa" element={<Visa />} />
           <Route path="/vols" element={<Vols />} />
           <Route path="/apropos" element={<Apropos />} />
+          <Route path="/Excursions" element={<Excursions />} />
           <Route path="/contact" element={<Contact />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
