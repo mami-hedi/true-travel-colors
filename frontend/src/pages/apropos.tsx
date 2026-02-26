@@ -1,6 +1,8 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { Plane, Globe, Users, Award, HeartHandshake, Shield } from "lucide-react";
+import { Link } from "react-router-dom";
+import { Plane, Globe, Users, Award, HeartHandshake, Shield, Phone, Mail } from "lucide-react";
+
 
 const Apropos = () => {
   return (
@@ -103,6 +105,33 @@ const Apropos = () => {
           </div>
         </div>
       </section>
+
+      <div className="bg-brand-crimson py-14 px-4">
+        <div className="container mx-auto text-center">
+          <h2 className="font-display text-3xl md:text-4xl font-bold text-primary-foreground mb-3">
+            Prêt pour votre prochain voyage ?
+          </h2>
+          <p className="font-body text-primary-foreground/80 text-lg mb-8 max-w-xl mx-auto">
+            Nos experts sont disponibles pour créer l'itinéraire parfait selon vos rêves.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href="tel:+21655500082"
+              className="inline-flex items-center justify-center gap-2 bg-primary-foreground text-brand-crimson font-bold px-8 py-3.5 rounded-full hover:opacity-90 transition-opacity"
+            >
+              <Phone size={18} />
+              +216 55 500 082
+            </a>
+            <Link
+              to="/contact"
+              className="inline-flex items-center justify-center gap-2 border-2 border-primary-foreground text-primary-foreground font-bold px-8 py-3.5 rounded-full hover:bg-primary-foreground/10 transition-colors"
+            >
+              <Mail size={18} />
+              Demander un devis
+            </Link>
+          </div>
+        </div>
+      </div>
 
       <Footer />
     </div>

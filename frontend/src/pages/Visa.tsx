@@ -176,19 +176,21 @@ const Visa = () => {
         </div>
       </section>
 
+      
+    
+
       {/* CTA */}
-      <section className="bg-foreground py-16 px-4">
+      <section className="bg-gradient-to-r from-brand-crimson to-brand-lime/80 py-16 px-4">
         <div className="container mx-auto text-center">
-          <Globe size={40} className="text-brand-lime mx-auto mb-4" />
           <h3 className="font-display text-3xl font-bold text-primary-foreground mb-4">
             Besoin d'un visa ? Contactez-nous maintenant !
           </h3>
-          <p className="font-body text-primary-foreground/70 max-w-xl mx-auto mb-8">
-            Consultation gratuite. Nos experts analysent votre situation et vous guident vers la meilleure solution.
+          <p className="font-body text-primary-foreground/80 max-w-xl mx-auto mb-8 text-lg">
+           Consultation gratuite. Nos experts analysent votre situation et vous guident vers la meilleure solution.
           </p>
           <a
             href="tel:+21655500082"
-            className="inline-flex items-center gap-2 bg-brand-crimson text-primary-foreground font-bold px-10 py-4 rounded-full hover:opacity-90 transition-opacity text-lg"
+            className="inline-flex items-center gap-2 bg-card text-brand-crimson font-bold px-10 py-4 rounded-full hover:opacity-90 transition-opacity text-lg shadow-card"
           >
             <Phone size={20} />
             +216 55 500 082
